@@ -3,8 +3,8 @@
 #include <ESP8266Ping.h>             // https://github.com/dancol90/ESP8266Ping/
 
 
-const char* WIFI_SSID   = "Embebidos";        // Your SSID
-const char* WIFI_PWD    = "WLT2012TLW";        // Your WiFi Password
+const char* WIFI_SSID   = "xxxxxxxxxx";        // Your SSID
+const char* WIFI_PWD    = "xxxxxxxxxx";        // Your WiFi Password
 
 #define RELAY D2
 #define LED1  D3
@@ -31,9 +31,9 @@ void setup() {
   pinMode(LED5, OUTPUT);
 
   /** We start by connecting to a WiFi network **/  
-  IPAddress local_IP(192, 168, 0, 5);       // Static IP Address for ESP8266
-  IPAddress subnet(255, 255, 255, 0);       // Subnet Mask
-  IPAddress gateway(192, 168, 0, 1);        // Default Gateway
+  IPAddress local_IP(xxx, xxx,xxx,xxx);       // Static IP Address for ESP8266
+  IPAddress subnet(xxx,xxx,xxx,xxx);       // Subnet Mask
+  IPAddress gateway(xxx,xxx,xxx,xxx);        // Default Gateway
 
   /*********** Setup a WiFi connection ***********/
   if (WiFi.config(local_IP, gateway, subnet)) { Serial.println("Static IP Configured"); }
